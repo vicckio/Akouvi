@@ -1,0 +1,9 @@
+#Part 1 Addition and Subtraction 
+
+Prompting user to input first number (num1)
+num1 = int(input("Enter the first number: ")) 
+
+Prompting user to input second number (num2)
+num2 = int(input("Enter the second number: "))
+
+Total sum = num1 + num2
