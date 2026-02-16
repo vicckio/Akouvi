@@ -5,10 +5,10 @@
 num1 = float(input("Enter first number:"))
 num2 = float(input("Enter second number:"))
 
-# Multiply both numbers enetered by user
+# Multiply both numbers entered by user
 Multiplication = num1 * num2
 
-# Display results of multiplacation
+# Display results of multiplication
 print("Multiplication:", multiplication)
 
 # Perform division and check for zero
