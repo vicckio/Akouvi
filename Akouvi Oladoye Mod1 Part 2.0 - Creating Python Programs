@@ -1,0 +1,11 @@
+# Part 2: Program to calculate multiplication and division of 2 numbers
+(Python starts running from top)
+num1 = float(input("Enter first number:"))
+num2 = float(input("Enter second number:"))
+
+Multiplication = num1 * num2
+
+print("Multiplication:", multiplication)
+
+if num2 !=0:
+    division = num1 /num2
