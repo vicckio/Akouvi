@@ -1,0 +1,12 @@
+# Step 6: Main Function
+def main():
+    name = input("Enter customer's name:\n")
+    date = input("Enter today's date:\n")
+
+    print("\nCustomer name:", name)
+    print("Today's date:", date)
+
+    cart = ShoppingCart(name, date)
+    print_menu(cart)
+
+main()
