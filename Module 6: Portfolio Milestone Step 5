@@ -1,0 +1,56 @@
+# Step 5: print_menu() Function
+def print_menu(cart):
+    choice = ""
+
+    while choice != "q":
+        print("\nMENU")
+        print("a - Add item to cart")
+        print("r - Remove item from cart")
+        print("c - Change item quantity")
+        print("i - Output items' descriptions")
+        print("o - Output shopping cart")
+        print("q - Quit")
+
+        choice = input("Choose an option:\n")
+
+        if choice == "a":
+            print("\nADD ITEM TO CART")
+            name = input("Enter the item name:\n")
+            desc = input("Enter the item description:\n")
+            price = float(input("Enter the item price:\n"))
+            qty = int(input("Enter the item quantity:\n"))
+
+            item = ItemToPurchase()
+            item.item_name = name
+            item.item_description = desc
+            item.item_price = price
+            item.item_quantity = qty
+
+            cart.add_item(item)
+
+        elif choice == "r":
+            print("\nREMOVE ITEM FROM CART")
+            name = input("Enter name of item to remove:\n")
+            cart.remove_item(name)
+
+        elif choice == "c":
+            print("\nCHANGE ITEM QUANTITY")
+            name = input("Enter the item name:\n")
+            qty = int(input("Enter the new quantity:\n"))
+
+            item = ItemToPurchase()
+            item.item_name = name
+            item.item_quantity = qty
+
+            cart.modify_item(item)
+
+        elif choice == "i":
+            print("\nOUTPUT ITEMS' DESCRIPTIONS")
+            cart.print_descriptions()
+
+        elif choice == "o":
+            print("\nOUTPUT SHOPPING CART")
+            cart.print_total()
+
+        elif choice != "q":
+            print("Invalid option. Try again.")
